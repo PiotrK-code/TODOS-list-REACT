@@ -23,16 +23,15 @@ function App() {
 
       <Section
         title="Lista zadań"
-        body=
-        {<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
-      }
-        extraHeaderContent=
-        {<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
-      }
-          />
-</Conteiner>
-
-  )
-};
+        body={
+          <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
+        }
+        extraHeaderContent={
+          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
+        }
+      />
+    </Conteiner>
+  );
+}
 
 export default App;

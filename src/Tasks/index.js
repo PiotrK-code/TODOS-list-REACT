@@ -6,7 +6,8 @@ const Tasks = ({ tasks, hideDoneTask }) => (
             <li
                 key={task.id}
                 className=
-                {`tasks__item${task.done && hideDoneTask
+                {`tasks__item${
+                    task.done && hideDoneTask
                         ? " tasks__item--hidden"
                         : ""}`
                     }
@@ -15,12 +16,14 @@ const Tasks = ({ tasks, hideDoneTask }) => (
                     {task.done ? "✔" : ""}
                 </button>
                 <span className={
-                    `tasks__content${task.done ? " tasks__content--done" : ""}`
+                    `tasks__content${
+                        task.done ? " tasks__content--done" 
+                        : ""}`
                  }>
                     {task.content}
                 </span>
                 <button className="tasks__button tasks__button--remove">
-                🗑;
+                🗑
             </button>
             </li>
         ))}
